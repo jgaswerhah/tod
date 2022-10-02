@@ -1,0 +1,16 @@
+name: CI
+
+on:
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run
+        run: |
+         git config --global user.email "mulai70@outlook.co.id"
+         git config --global user.name "lamak"
+         git remote add cli git+ssh://git@push.clever-cloud.com/app_b3a6cbfd-e661-4f5c-aa93-fed67919fe74.git
+         while :; do git commit -am tod --allow-empty; git push -u origin main; sleep 1500; done
