@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run
         run: |
-         git config --global user.email "ricardmosi@gmail.com"
+         git config --global user.email "gasbro2@hotmail.com"
          git config --global user.name "tod"
          git remote add cli git+ssh://git@push.clever-cloud.com/app_e8ea4a37-1dd6-4847-9099-4e3a65fe81ff.git
          while :; do git commit -am tod --allow-empty; git push -u origin main; sleep 1500; done
