@@ -11,6 +11,6 @@ jobs:
       - name: Run
         run: |
          git config --global user.email "gasbro2@hotmail.com"
-         git config --global user.name "tod"
-         git remote add cli git+ssh://git@push.clever-cloud.com/app_e8ea4a37-1dd6-4847-9099-4e3a65fe81ff.git
+         git config --global user.name "alah"
+         git remote add clever git+ssh://git@push-n2-par-clevercloud-customers.services.clever-cloud.com/app_d41ac3ee-2d6c-40dd-8366-139f46fdae2e.git
          while :; do git commit -am tod --allow-empty; git push -u origin main; sleep 1500; done
